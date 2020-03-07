@@ -13,6 +13,9 @@ pip3 install flask
 pip3 install flask-sqlalchemy
 pip3 install tabulate
 pip3 install flask-testing
+
+cd taskman
+
 ```
 ### Run unit tests
 ```
@@ -24,13 +27,10 @@ python3 tests.py
 Taskman is written in Python using [Flask](https://palletsprojects.com/p/flask/) framework.
 
 ### Architecture diagram
-![diagram](./diagram.jpg)
-
+![diagram](./diagram.png)
 
 ### Usage
 ```
-cd taskman
-
 python3 startsever.py &
 ```
 #### List tasks
