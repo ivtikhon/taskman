@@ -41,12 +41,11 @@ class TaskmanTestCase(TestCase):
             content_type='application/json')
         self.assertEqual(result.status_code, 201)
 
-    def test_fail_create_task_bad_request(self):
+    def test_fail_create_task_invalid_request_format(self):
         result = self.client.post('/tasks/',
             data=json.dumps({'subject1': 'Testing task 3'}), 
             content_type='application/json')
         self.assertEqual(result.status_code, 400)
-
 
     def test_delete_task_by_id(self):
         result = self.client.delete('/tasks/2')
