@@ -2,24 +2,29 @@
 
 Taskman is a simple application to manage a list of tasks 
 
-### Installation instructions
+## Installation
 
+### Clone git repository
 ```
 git clone https://github.com/ivtikhon/taskman.git
-
+```
+### Install prerequisites
+```
+cd taskman
 sudo apt-get -y install python3
 sudo apt-get -y install python3-pip
 pip3 install flask
 pip3 install flask-sqlalchemy
 pip3 install tabulate
 pip3 install flask-testing
-
-cd taskman
-
 ```
 ### Run unit tests
 ```
 python3 tests.py
+```
+### Start server
+```
+python3 startsever.py
 ```
 
 ## Implemetation details
@@ -29,24 +34,21 @@ Taskman is written in Python using [Flask](https://palletsprojects.com/p/flask/)
 ### Architecture diagram
 ![diagram](./diagram.png)
 
-### Usage
-```
-python3 startsever.py &
-```
-#### List tasks
+## Usage
+### List tasks
 ```
 python3 taskman.py list
 ```
-#### Add a task
+### Add a task
 ```
 python3 taskman.py add "Develop Python program" "4/30/20"
 ```
-##### Delete task
+### Delete task
 ```
 python3 taskman.py done 4
 ```
 
-### Examples
+## Examples
 ```
 $ python3 taskman.py list
   Id  Subject                                                    Due date
