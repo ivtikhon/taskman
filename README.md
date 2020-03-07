@@ -9,11 +9,16 @@ git clone https://github.com/ivtikhon/taskman.git
 
 sudo apt-get -y install python3
 sudo apt-get -y install python3-pip
-sudo pip3 install flask
-sudo pip3 install flask-sqlalchemy
-sudo pip3 install tabulate
-pip3 install flask-sqlalchemy --user
+pip3 install flask
+pip3 install flask-sqlalchemy
+pip3 install tabulate
+pip3 install flask-testing
 ```
+### Run unit tests
+```
+python3 tests.py
+```
+
 ### Usage
 ```
 cd taskman
