@@ -15,8 +15,8 @@ sudo apt-get -y install python3
 sudo apt-get -y install python3-pip
 pip3 install flask
 pip3 install flask-sqlalchemy
-pip3 install tabulate
 pip3 install flask-testing
+pip3 install tabulate
 ```
 ### Run unit tests
 ```
@@ -29,7 +29,7 @@ python3 startsever.py
 
 ## Implemetation details
 
-Taskman is written in Python using [Flask](https://palletsprojects.com/p/flask/) framework.
+Application is written in Python using [Flask](https://palletsprojects.com/p/flask/) framework. Command line interface communicates to an application server that manages a list of tasks, stored in a database. All operations on tasks are logged to a file.
 
 ### Architecture diagram
 ![diagram](./diagram.png)
@@ -39,11 +39,16 @@ Taskman is written in Python using [Flask](https://palletsprojects.com/p/flask/)
 ```
 python3 taskman.py list
 ```
+### List tasks expiring today or already expired
+```
+python3 taskman.py list --expiring-today
+```
+
 ### Add a task
 ```
 python3 taskman.py add "Develop Python program" "4/30/20"
 ```
-### Delete task
+### Close a task
 ```
 python3 taskman.py done 4
 ```
@@ -57,7 +62,6 @@ $ python3 taskman.py list
    5  Read about class inheritance model in Python               05/17/2020
    6  Collect input from stakeholders for weekly status meeting  04/08/2020
    7  Take a C# training course                                  03/05/2020
-
 
 $ python3 taskman.py done 5
 $ python3 taskman.py list
