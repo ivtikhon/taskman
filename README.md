@@ -1,9 +1,6 @@
 # Taskman
 
-Taskman is a simple application to manage a list of tasks implemented in Python using [Flask](https://palletsprojects.com/p/flask/) framework. 
-
-### Architecture diagram
-![diagram](./diagram.jpg)
+Taskman is a simple application to manage a list of tasks 
 
 ### Installation instructions
 
@@ -21,6 +18,14 @@ pip3 install flask-testing
 ```
 python3 tests.py
 ```
+
+## Implemetation details
+
+Taskman is written in Python using [Flask](https://palletsprojects.com/p/flask/) framework.
+
+### Architecture diagram
+![diagram](./diagram.jpg)
+
 
 ### Usage
 ```
