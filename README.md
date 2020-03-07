@@ -29,7 +29,7 @@ python3 startsever.py
 
 ## Implemetation details
 
-Application is written in Python using [Flask](https://palletsprojects.com/p/flask/) framework. Command line interface communicates through HTTP to an application server that manages a list of tasks, stored in a database. All operations on tasks are logged to a file. Appliction server and logging parameters are stored in a configuration file. The default database engine is SQLite, though easily reconfigurable.
+The application is written in Python using [Flask](https://palletsprojects.com/p/flask/) framework. The command line interface communicates through HTTP with an application server that manages a list of tasks stored in a database. All operations on tasks are logged to a file. The appliction server and logging parameters are stored in a configuration file. The default database engine is SQLite, though easily reconfigurable.
 
 ### Architecture diagram
 ![diagram](./diagram.png)
