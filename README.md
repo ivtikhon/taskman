@@ -1,6 +1,9 @@
 # Taskman
 
-Taskman is a simple program to manage a list of tasks
+Taskman is a simple application to manage a list of tasks implemented in Python using [Flask](https://palletsprojects.com/p/flask/) framework. 
+
+### Architecture diagram
+![diagram]./diagram.jpg
 
 ### Installation instructions
 
