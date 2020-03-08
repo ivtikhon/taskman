@@ -51,7 +51,7 @@ taskman list --expiring-today
 ```
 ### Add a task
 ```
-taskman add "Develop Python program" "4/30/20"
+taskman add "Develop Python program" "4/30/2020"
 ```
 ### Close a task
 ```
