@@ -17,7 +17,7 @@ pip3 install flask
 pip3 install flask-sqlalchemy
 pip3 install flask-testing
 pip3 install tabulate
-chmod 755 taskman startserver stopserver
+chmod 755 taskman startserver.sh stopserver.sh
 ```
 ### Run unit tests
 ```
@@ -25,7 +25,7 @@ python3 tests.py
 ```
 ### Start application server
 ```
-startsever
+startsever.sh
 ```
 
 ## Implemetation details
@@ -49,7 +49,6 @@ taskman list
 ```
 taskman list --expiring-today
 ```
-
 ### Add a task
 ```
 taskman add "Develop Python program" "4/30/20"
