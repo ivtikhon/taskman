@@ -45,7 +45,7 @@ def del_task(id):
 
 if __name__ == '__main__':
     # Parse arguments
-    parser = argparse.ArgumentParser(prog='taskman.py')
+    parser = argparse.ArgumentParser(prog='taskman')
     subparsers = parser.add_subparsers(dest='command', help ='commands')
     list_parser = subparsers.add_parser('list', help = 'list tasks')
     list_parser.add_argument('--expiring-today', help = 'tasks that are due today', action='store_true')
