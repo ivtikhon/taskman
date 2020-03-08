@@ -17,14 +17,15 @@ pip3 install flask
 pip3 install flask-sqlalchemy
 pip3 install flask-testing
 pip3 install tabulate
+chmod 755 taskman startserver stopserver
 ```
 ### Run unit tests
 ```
 python3 tests.py
 ```
-### Start server
+### Start application server
 ```
-python3 startsever.py
+startsever
 ```
 
 ## Implemetation details
@@ -42,25 +43,25 @@ The application is written in Python using [Flask](https://palletsprojects.com/p
 ## Usage
 ### List tasks
 ```
-python3 taskman.py list
+taskman list
 ```
 ### List tasks expiring today or already expired
 ```
-python3 taskman.py list --expiring-today
+taskman list --expiring-today
 ```
 
 ### Add a task
 ```
-python3 taskman.py add "Develop Python program" "4/30/20"
+taskman add "Develop Python program" "4/30/20"
 ```
 ### Close a task
 ```
-python3 taskman.py done 4
+taskman done 4
 ```
 
 ## Examples
 ```
-$ python3 taskman.py list
+$ ./taskman list
   Id  Subject                                                    Due date
 ----  ---------------------------------------------------------  ----------
    3  Migrate SQL databases to cloud                             06/22/2020
@@ -68,21 +69,20 @@ $ python3 taskman.py list
    6  Collect input from stakeholders for weekly status meeting  04/08/2020
    7  Take a C# training course                                  03/05/2020
 
-$ python3 taskman.py done 5
-$ python3 taskman.py list
+$ ./taskman done 5
+$ ./taskman list
   Id  Subject                                                    Due date
 ----  ---------------------------------------------------------  ----------
    3  Migrate SQL databases to cloud                             06/22/2020
    6  Collect input from stakeholders for weekly status meeting  04/08/2020
    7  Take a C# training course                                  03/05/2020
 
-$ python3 taskman.py add "Update environment definition file" "5/13/2020"
-$ python3 taskman.py list
+$ ./taskman add "Update environment definition file" "5/13/2020"
+$ ./taskman list
   Id  Subject                                                    Due date
 ----  ---------------------------------------------------------  ----------
    3  Migrate SQL databases to cloud                             06/22/2020
    6  Collect input from stakeholders for weekly status meeting  04/08/2020
    7  Take a C# training course                                  03/05/2020
    8  Update environment definition file                         05/13/2020
-
 ```
